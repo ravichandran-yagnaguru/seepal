@@ -12,7 +12,7 @@ centerpiece — an intuitive, non-technical engineering metaphor — instead of 
 gradient blob, or literal software-architecture wiring diagram.
 -->
 <meta charset="utf-8" />
-<title>SeePal</title>
+<title>Span Labs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   :root {
@@ -273,6 +273,23 @@ gradient blob, or literal software-architecture wiring diagram.
   .schematic .pulse { fill: var(--slate); }
   .schematic .tag { font-size: 7px; fill: var(--ink-faint); letter-spacing: 0.08em; }
 
+  /* ---------- motto ---------- */
+  .motto { padding: 22px 0; border-bottom: 1px solid var(--line); }
+  .motto-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .motto-inner .motto-sep { color: var(--brass); }
+
   /* ---------- stats ---------- */
   .stats { padding: 40px 0; border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
   .stats-grid {
@@ -414,7 +431,7 @@ gradient blob, or literal software-architecture wiring diagram.
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="wordmark" href="#top">SEEPAL<span class="dot">&middot;</span></a>
+    <a class="wordmark" href="#top">SPAN LABS<span class="dot">&middot;</span></a>
     <div class="nav-cta">
       <ul class="nav-links nav-links-wrap">
         <li><a href="#capabilities">Capabilities</a></li>
@@ -433,12 +450,12 @@ gradient blob, or literal software-architecture wiring diagram.
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Independent architecture practice</div>
+        <div class="eyebrow">Enterprise architecture &amp; engineering</div>
         <h1>Built like it has to hold.</h1>
-        <p class="lede">SeePal is an independent architecture practice led by Seetharaman Palanichamy &mdash; 25+ years designing enterprise systems for scale, reliability, and cost. For larger builds, SP works with a trusted network of senior partners who bring the same enterprise-grade experience to the table.</p>
+        <p class="lede">SPAN Labs is an engineering practice for teams who need enterprise-grade systems without enterprise overhead. We design and build for scale, reliability, and cost &mdash; led by senior architects with 25+ years of enterprise experience, backed by a trusted network of partners for larger builds.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Start a project &rarr;</a>
-          <a class="btn" href="#approach">Why engage us</a>
+          <a class="btn" href="#approach">Why work with us</a>
         </div>
       </div>
 
@@ -487,11 +504,18 @@ gradient blob, or literal software-architecture wiring diagram.
     </div>
   </section>
 
+  <!-- ===== MOTTO ===== -->
+  <div class="motto">
+    <div class="wrap motto-inner">
+      <span>Service</span><span class="motto-sep">&middot;</span><span>Quality</span><span class="motto-sep">&middot;</span><span>Transparency</span>
+    </div>
+  </div>
+
   <!-- ===== STATS ===== -->
   <div class="stats">
     <div class="wrap stats-grid">
-      <div class="stat"><b class="num">25+</b><span>Years leading architecture</span></div>
-      <div class="stat"><b>Direct</b><span>Access to the architect, not a rep</span></div>
+      <div class="stat"><b class="num">25+</b><span>Years of enterprise experience</span></div>
+      <div class="stat"><b>Direct</b><span>Access to the engineers, not a rep</span></div>
       <div class="stat"><b>Flexible</b><span>Scoped to the project, not a template</span></div>
       <div class="stat"><b>Trusted</b><span>Senior partners for larger builds</span></div>
     </div>
@@ -539,7 +563,7 @@ gradient blob, or literal software-architecture wiring diagram.
       <div class="section-head">
         <div>
           <div class="section-kicker"><span class="sheet-ref">A&ndash;02</span><span class="rule"></span></div>
-          <h2>Why engage us directly</h2>
+          <h2>Why work with SPAN Labs</h2>
         </div>
         <p style="max-width:38ch;color:var(--ink-soft);margin:0;">No layers between you and the engineering. That's the whole model.</p>
       </div>
@@ -547,8 +571,8 @@ gradient blob, or literal software-architecture wiring diagram.
       <div class="cap-grid">
         <article class="cap-card">
           <div class="tag-row"><span class="cap-class">Direct</span></div>
-          <h3>You work with SP, personally</h3>
-          <p>Every engagement is led by SP from the first conversation to launch &mdash; not handed off partway through.</p>
+          <h3>You work directly with the team building it</h3>
+          <p>Every engagement is led by senior engineers from the first conversation to launch &mdash; not handed off partway through.</p>
         </article>
         <article class="cap-card">
           <div class="tag-row"><span class="cap-class">Scoped to fit</span></div>
@@ -583,8 +607,8 @@ gradient blob, or literal software-architecture wiring diagram.
         <article class="person">
           <div class="initials">SP</div>
           <h3>Seetharaman Palanichamy</h3>
-          <div class="role">Principal Architect &middot; 25+ years</div>
-          <p class="bio">Twenty-five years designing and running enterprise systems at scale &mdash; from ground-up architecture to the operational discipline that keeps large platforms available under real production load. SP leads every engagement personally, start to finish.</p>
+          <div class="role">Founder &amp; Principal Architect &middot; 25+ years</div>
+          <p class="bio">Twenty-five years designing and running enterprise systems at scale &mdash; from ground-up architecture to the operational discipline that keeps large platforms available under real production load. Seetharaman founded SPAN Labs to bring that same rigor to teams who need enterprise-grade engineering without enterprise overhead.</p>
           <div class="linkedin"><a href="https://www.linkedin.com/in/seetharamanpalanichamy/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong);">LinkedIn &rarr;</a></div>
         </article>
         <article class="person">
@@ -598,7 +622,7 @@ gradient blob, or literal software-architecture wiring diagram.
           </div>
           <h3>A trusted network, when it's needed</h3>
           <div class="role">Senior partners &middot; brought in as projects require</div>
-          <p class="bio">For larger builds, SP works with a small, vetted network of senior architects and engineers &mdash; each with their own enterprise-grade track record. You still deal with one person throughout; the network scales quietly behind the scope.</p>
+          <p class="bio">For larger builds, SPAN Labs draws on a small, vetted network of senior architects and engineers &mdash; each with their own enterprise-grade track record. You still work with one team throughout; the network scales quietly behind the scope.</p>
         </article>
       </div>
     </div>
@@ -659,7 +683,7 @@ gradient blob, or literal software-architecture wiring diagram.
         <!-- Submits to Formspree. The action/method work with JS disabled;
              the script below progressively enhances it to stay on-page. -->
         <form id="contact-form" action="https://formspree.io/f/xppalnvz" method="POST">
-          <input type="hidden" name="_subject" value="New SeePal project inquiry" />
+          <input type="hidden" name="_subject" value="New SPAN Labs project inquiry" />
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
@@ -692,8 +716,8 @@ gradient blob, or literal software-architecture wiring diagram.
 
 <footer>
   <div class="wrap footer-inner">
-    <span>&copy; <span id="year"></span> SeePal &mdash; Architecture Practice</span>
-    <span>Led by Seetharaman Palanichamy</span>
+    <span>&copy; <span id="year"></span> SPAN Labs LLC</span>
+    <span>Service &middot; Quality &middot; Transparency</span>
   </div>
 </footer>
 
