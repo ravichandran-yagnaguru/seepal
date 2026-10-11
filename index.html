@@ -1,3 +1,7 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
 <!-- Design plan:
 Color (light default): bg #F4F1E8 (warm paper), bg-raised #EAE4D3, ink #16273D (deep navy text),
 ink-soft #46586B, brass #8A6A2E (bronze accent, light), slate #3F6E82 (teal-slate accent, light).
@@ -11,54 +15,40 @@ hairline rules, corner-bracket "plates") with a live inline-SVG bridge blueprint
 centerpiece — an intuitive, non-technical engineering metaphor — instead of a stock photo,
 gradient blob, or literal software-architecture wiring diagram.
 -->
-<meta charset="utf-8" />
-<title>Span Labs</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://w3.org' viewBox='0 0 100 100'><text y='70' font-size='60' font-family='monospace' font-weight='bold' fill='%23007acc'>&lt;span&gt;</text></svg>">
+<title>SPAN Labs | Custom Software &amp; Enterprise Architecture for Any Scale</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='62' font-size='28' text-anchor='middle' font-family='monospace' font-weight='bold' fill='%23007acc'%3E%26lt;span%26gt;%3C/text%3E%3C/svg%3E" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Custom software and enterprise architecture for businesses of any size. Senior-led, AI-accelerated, and transparent. From first app to global platform." />
+<link rel="canonical" href="https://spanlabs.tech/" />
+<meta name="theme-color" content="#0f1b2d" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SPAN Labs" />
+<meta property="og:title" content="SPAN Labs | Custom Software &amp; Enterprise Architecture for Any Scale" />
+<meta property="og:description" content="Senior-led custom software and enterprise architecture, from a first business app to a global platform. Service, quality, transparency." />
+<meta property="og:url" content="https://spanlabs.tech/" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "SPAN Labs LLC",
+  "alternateName": "SPAN Labs",
+  "url": "https://spanlabs.tech/",
+  "description": "Custom software and enterprise architecture for businesses of any size, backed by 25+ years of enterprise architecture experience.",
+  "serviceType": ["Custom software development", "Enterprise architecture", "System modernization", "Business process automation"],
+  "member": {
+    "@type": "Person",
+    "name": "Seetharaman Palanichamy",
+    "alternateName": "SP",
+    "jobTitle": "Advisor",
+    "sameAs": ["https://www.linkedin.com/in/seetharamanpalanichamy/"]
+  }
+}
+</script>
 <style>
+  /* Single navy-and-brass theme by design: the page looks the same regardless of the viewer's light/dark setting. */
   :root {
-    --bg: #f4f1e8;
-    --bg-raised: #eae4d3;
-    --bg-raised-2: #e2dac4;
-    --ink: #16273d;
-    --ink-soft: #46586b;
-    --ink-faint: #7c8a99;
-    --brass: #8a6a2e;
-    --brass-strong: #6e5322;
-    --slate: #3f6e82;
-    --line: rgba(22, 39, 61, 0.16);
-    --line-strong: rgba(22, 39, 61, 0.3);
-    --card-bg: #faf8f1;
-    --shadow: 0 1px 0 rgba(22, 39, 61, 0.06);
-    --focus: #3f6e82;
-    --danger: #9c3b3b;
-
-    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, "Noto Serif", serif;
-    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0f1b2d;
-      --bg-raised: #16273d;
-      --bg-raised-2: #1c3049;
-      --ink: #e9e4d6;
-      --ink-soft: #90a3b8;
-      --ink-faint: #5c7288;
-      --brass: #c6a15b;
-      --brass-strong: #dab876;
-      --slate: #7fa8b8;
-      --line: rgba(233, 228, 214, 0.14);
-      --line-strong: rgba(233, 228, 214, 0.28);
-      --card-bg: #132234;
-      --shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-      --focus: #7fa8b8;
-      --danger: #e08a8a;
-    }
-  }
-
-  :root[data-theme="dark"] {
+    color-scheme: dark;
     --bg: #0f1b2d;
     --bg-raised: #16273d;
     --bg-raised-2: #1c3049;
@@ -74,10 +64,14 @@ gradient blob, or literal software-architecture wiring diagram.
     --shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     --focus: #7fa8b8;
     --danger: #e08a8a;
+
+    --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, "Noto Serif", serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
   }
 
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; background: var(--bg); }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
@@ -228,7 +222,7 @@ gradient blob, or literal software-architecture wiring diagram.
     .hero-grid { grid-template-columns: 1fr; }
   }
   .hero h1 {
-    font-size: clamp(2.15rem, 3.6vw + 1rem, 3.6rem);
+    font-size: clamp(2rem, 3.1vw + 1rem, 3.3rem);
     line-height: 1.08;
     margin: 18px 0 22px;
   }
@@ -329,6 +323,8 @@ gradient blob, or literal software-architecture wiring diagram.
   .cap-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
   .cap-card p { color: var(--ink-soft); margin: 0; font-size: 0.96rem; }
   .cap-card.span-full { grid-column: 1 / -1; }
+  .scale-list { margin: 0; padding-left: 1.1em; display: grid; gap: 10px; color: var(--ink-soft); font-size: 0.96rem; }
+  .scale-list li::marker { color: var(--brass); }
 
   /* ---------- team ---------- */
   .team-grid {
@@ -429,6 +425,8 @@ gradient blob, or literal software-architecture wiring diagram.
 
   ::selection { background: var(--brass); color: var(--bg); }
 </style>
+</head>
+<body>
 
 <header class="nav">
   <div class="wrap nav-inner">
@@ -438,7 +436,7 @@ gradient blob, or literal software-architecture wiring diagram.
         <li><a href="#capabilities">Capabilities</a></li>
         <li><a href="#approach">Why us</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#how-we-work">How we work</a></li>
+        <li><a href="#situations">When to call us</a></li>
       </ul>
       <a class="btn btn-primary" href="#contact">Start a project</a>
     </div>
@@ -451,12 +449,12 @@ gradient blob, or literal software-architecture wiring diagram.
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Enterprise architecture &amp; engineering</div>
-        <h1>Built like it has to hold.</h1>
-        <p class="lede">SPAN Labs is an engineering practice for teams who need enterprise-grade systems without enterprise overhead. We design and build for scale, reliability, and cost &mdash; led by senior architects with 25+ years of enterprise experience, backed by a trusted network of partners for larger builds.</p>
+        <div class="eyebrow">Custom software &amp; enterprise architecture</div>
+        <h1>Custom software, built like it has to hold.</h1>
+        <p class="lede">From a booking tool for a growing business to a platform serving millions, the same senior engineering sits behind every build. Backed by 25+ years of enterprise architecture experience, delivered with AI-accelerated speed and none of the usual overhead.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#contact">Start a project &rarr;</a>
-          <a class="btn" href="#approach">Why work with us</a>
+          <a class="btn" href="#capabilities">See what we build</a>
         </div>
       </div>
 
@@ -522,15 +520,53 @@ gradient blob, or literal software-architecture wiring diagram.
     </div>
   </div>
 
+  <!-- ===== ANY SCALE ===== -->
+  <section id="scale">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker"><span class="sheet-ref">A&ndash;01</span><span class="rule"></span></div>
+          <h2>One standard, sized to your project</h2>
+        </div>
+        <p style="max-width:38ch;color:var(--ink-soft);margin:0;">Your first custom application or a platform that has to scale &mdash; senior engineers handle the build from day one.</p>
+      </div>
+
+      <div class="cap-grid">
+        <article class="cap-card">
+          <div class="tag-row"><span class="cap-class">Growing businesses</span></div>
+          <h3>Business applications &amp; automation</h3>
+          <ul class="scale-list">
+            <li>Booking, inventory, invoicing, and internal workflow tools</li>
+            <li>Spreadsheets and paper processes replaced with software that fits how you actually work</li>
+            <li>Focused builds that move quickly and are made to grow with you</li>
+          </ul>
+        </article>
+        <article class="cap-card">
+          <div class="tag-row"><span class="cap-class">Scale-ups &amp; enterprise</span></div>
+          <h3>Platforms &amp; architecture</h3>
+          <ul class="scale-list">
+            <li>High-throughput, real-time, streaming, and regulated systems</li>
+            <li>Architecture reviews, performance work, and modernization of what you already run</li>
+            <li>Senior architecture leadership without the agency layers</li>
+          </ul>
+        </article>
+        <article class="cap-card span-full">
+          <h3>Same people. Same standards. Different size.</h3>
+          <p>The discipline behind a first app is the discipline behind a platform &mdash; so you never have to choose between a small build done right and a big one done well.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CAPABILITIES ===== -->
   <section id="capabilities">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker"><span class="sheet-ref">A&ndash;01</span><span class="rule"></span></div>
-          <h2>What we architect</h2>
+          <div class="section-kicker"><span class="sheet-ref">A&ndash;02</span><span class="rule"></span></div>
+          <h2>What we build</h2>
         </div>
-        <p style="max-width:38ch;color:var(--ink-soft);margin:0;">Four kinds of pressure, each demanding a different kind of engineering. We've built for all four.</p>
+        <p style="max-width:38ch;color:var(--ink-soft);margin:0;">Four kinds of pressure, each demanding its own kind of engineering &mdash; and each one shows up at any size.</p>
       </div>
 
       <div class="cap-grid">
@@ -563,7 +599,7 @@ gradient blob, or literal software-architecture wiring diagram.
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker"><span class="sheet-ref">A&ndash;02</span><span class="rule"></span></div>
+          <div class="section-kicker"><span class="sheet-ref">A&ndash;03</span><span class="rule"></span></div>
           <h2>Why work with SPAN Labs</h2>
         </div>
         <p style="max-width:38ch;color:var(--ink-soft);margin:0;">No layers between you and the engineering. That's the whole model.</p>
@@ -581,14 +617,19 @@ gradient blob, or literal software-architecture wiring diagram.
           <p>Engagements are shaped around what your project actually needs, not a template built for someone else's.</p>
         </article>
         <article class="cap-card">
-          <div class="tag-row"><span class="cap-class">Modern tooling</span></div>
-          <h3>Senior judgment, accelerated delivery</h3>
-          <p>We use the best tools available &mdash; including AI-accelerated engineering &mdash; without cutting corners on rigor.</p>
+          <div class="tag-row"><span class="cap-class">Built in, not billed</span></div>
+          <h3>Process is second nature</h3>
+          <p>Reliable, secure, and maintainable is how this team builds by default &mdash; and AI-accelerated tooling keeps it fast. You get the rigor without paying for the ceremony.</p>
         </article>
         <article class="cap-card">
           <div class="tag-row"><span class="cap-class">Open by design</span></div>
           <h3>Let's figure it out together</h3>
           <p>Timeline, scope, and cost are worked out once we understand what you're building &mdash; every project is different.</p>
+        </article>
+        <article class="cap-card span-full">
+          <div class="tag-row"><span class="cap-class">Transparency</span></div>
+          <h3>Communication over surprises</h3>
+          <p>Regular updates, visible trade-offs, and decisions explained as they're made &mdash; not just at the milestones. If something changes, you hear it from us first, not from the deadline slipping.</p>
         </article>
       </div>
     </div>
@@ -599,8 +640,8 @@ gradient blob, or literal software-architecture wiring diagram.
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker"><span class="sheet-ref">A&ndash;03</span><span class="rule"></span></div>
-          <h2>Who's building it</h2>
+          <div class="section-kicker"><span class="sheet-ref">A&ndash;04</span><span class="rule"></span></div>
+          <h2>Who's behind it</h2>
         </div>
       </div>
 
@@ -609,7 +650,7 @@ gradient blob, or literal software-architecture wiring diagram.
           <div class="initials">SP</div>
           <h3>Seetharaman Palanichamy</h3>
           <div class="role">Advisor</div>
-          <p class="bio">Twenty-five years designing and running enterprise systems at scale &mdash; from ground-up architecture to the operational discipline that keeps large platforms available under real production load. Seetharaman founded SPAN Labs to bring that same rigor to teams who need enterprise-grade engineering without enterprise overhead.</p>
+          <p class="bio">Twenty-five years designing and running enterprise systems at scale &mdash; from ground-up architecture to the operational discipline that keeps large platforms available under real production load. SP advises SPAN Labs on architecture and engineering standards, so that same rigor goes into every project, whatever its size.</p>
           <div class="linkedin"><a href="https://www.linkedin.com/in/seetharamanpalanichamy/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;border-bottom:1px solid var(--line-strong);">LinkedIn &rarr;</a></div>
         </article>
         <article class="person">
@@ -629,37 +670,47 @@ gradient blob, or literal software-architecture wiring diagram.
     </div>
   </section>
 
-  <!-- ===== HOW WE WORK ===== -->
-  <section id="how-we-work">
+  <!-- ===== WHEN TO CALL US ===== -->
+  <section id="situations">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker"><span class="sheet-ref">A&ndash;04</span><span class="rule"></span></div>
-          <h2>How we work</h2>
+          <div class="section-kicker"><span class="sheet-ref">A&ndash;05</span><span class="rule"></span></div>
+          <h2>When people call us</h2>
         </div>
-        <p style="max-width:38ch;color:var(--ink-soft);margin:0;">We believe in engineering, not templates &mdash; the process bends to fit the project.</p>
+        <p style="max-width:38ch;color:var(--ink-soft);margin:0;">Different companies, same moment: something has to work, and it has to keep working. Sound familiar?</p>
       </div>
 
       <div class="cap-grid">
         <article class="cap-card">
-          <h3>Start with a conversation</h3>
-          <p>We talk through what you're building and where it's likely to break first &mdash; no forms, no sales script.</p>
+          <div class="tag-row"><span class="cap-class">Small business</span></div>
+          <h3>&ldquo;We run on spreadsheets and WhatsApp.&rdquo;</h3>
+          <p>We turn the scattered tools into one simple system your team actually uses &mdash; bookings, orders, invoices, whatever your day runs on.</p>
         </article>
         <article class="cap-card">
-          <h3>Architecture before code</h3>
-          <p>We design the system before anyone builds anything: components, data flow, and where the real risk sits.</p>
+          <div class="tag-row"><span class="cap-class">Enterprise</span></div>
+          <h3>&ldquo;We need to modernize without stopping the business.&rdquo;</h3>
+          <p>We map what you have, fix the riskiest parts first, and move you forward in steps &mdash; no risky all-at-once rewrite.</p>
         </article>
         <article class="cap-card">
-          <h3>Whatever shape it needs to take</h3>
-          <p>A short advisory engagement, a full build, or something in between &mdash; scope follows the project, not a package.</p>
+          <div class="tag-row"><span class="cap-class">Growing company</span></div>
+          <h3>&ldquo;Our app is slowing down as we grow.&rdquo;</h3>
+          <p>We find what's actually holding it back and fix that, instead of rebuilding everything from scratch.</p>
         </article>
         <article class="cap-card">
-          <h3>Built to be handed off cleanly</h3>
-          <p>You end up with a system your team can run and extend &mdash; and a clear picture of how it was built.</p>
+          <div class="tag-row"><span class="cap-class">Any size</span></div>
+          <h3>&ldquo;The person who built it left, and nobody knows how it works.&rdquo;</h3>
+          <p>We make sense of it, document it, and put it on a footing you can rely on.</p>
         </article>
-        <article class="cap-card span-full">
-          <h3>Communication over surprises</h3>
-          <p>Regular updates, visible trade-offs, and decisions explained as they're made &mdash; not just at the milestones. If something changes, you hear it from us first, not from the deadline slipping.</p>
+        <article class="cap-card">
+          <div class="tag-row"><span class="cap-class">Early stage</span></div>
+          <h3>&ldquo;We have an idea, but what do we build first?&rdquo;</h3>
+          <p>We help you choose the smallest version worth building, then build it properly the first time.</p>
+        </article>
+        <article class="cap-card">
+          <div class="tag-row"><span class="cap-class">Mid-size company</span></div>
+          <h3>&ldquo;We want a second opinion before we commit.&rdquo;</h3>
+          <p>An independent, senior review of the plan, the risks, and the cost &mdash; before you spend.</p>
         </article>
       </div>
     </div>
@@ -670,15 +721,15 @@ gradient blob, or literal software-architecture wiring diagram.
     <div class="wrap">
       <div class="section-head">
         <div>
-          <div class="section-kicker"><span class="sheet-ref">A&ndash;05</span><span class="rule"></span></div>
+          <div class="section-kicker"><span class="sheet-ref">A&ndash;06</span><span class="rule"></span></div>
           <h2>Start a project</h2>
         </div>
       </div>
 
       <div class="contact-grid">
         <div>
-          <p style="color:var(--ink-soft);max-width:40ch;">Tell us what you're building. We'll talk scope, approach, and cost together &mdash; every project is different, so let's start with a conversation, not a quote.</p>
-          <p class="fallback-note">Prefer email? Write directly to <a href="mailto:ravichandran.yagnaguru@gmail.com">ravichandran.yagnaguru@gmail.com</a>.</p>
+          <p style="color:var(--ink-soft);max-width:40ch;">Tell us what you're building &mdash; from a quick business automation to a multi-tier enterprise system. We'll talk scope, approach, and cost together; every project is different, so let's start with a conversation, not a quote.</p>
+          <p class="fallback-note">Prefer email? Write directly to <a href="mailto:spanlabs.tech@gmail.com">spanlabs.tech@gmail.com</a>.</p>
         </div>
 
         <!-- Submits to Formspree. The action/method work with JS disabled;
@@ -707,7 +758,7 @@ gradient blob, or literal software-architecture wiring diagram.
 
         <div id="form-success" class="form-success" style="display:none;" role="status">
           <p><strong>Thanks &mdash; got it.</strong></p>
-          <p>We'll get back to you shortly. If it's urgent, email <a href="mailto:ravichandran.yagnaguru@gmail.com">ravichandran.yagnaguru@gmail.com</a> directly.</p>
+          <p>We'll get back to you shortly. If it's urgent, email <a href="mailto:spanlabs.tech@gmail.com">spanlabs.tech@gmail.com</a> directly.</p>
         </div>
       </div>
     </div>
@@ -765,3 +816,5 @@ gradient blob, or literal software-architecture wiring diagram.
     });
   })();
 </script>
+</body>
+</html>
